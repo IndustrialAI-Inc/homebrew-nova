@@ -1,0 +1,30 @@
+name: Update formula
+
+# Follows the releases published on nova.endeavorai.com: hourly, or right away
+# with `gh workflow run update-formula.yml -R IndustrialAI-Inc/homebrew-nova`.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-formula
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/update-formula.sh
+      - name: Commit
+        run: |
+          git add -A Formula
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          version=$(sed -n 's/^  version "\(.*\)"$/\1/p' Formula/nova.rb)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "nova $version"
+          git push
