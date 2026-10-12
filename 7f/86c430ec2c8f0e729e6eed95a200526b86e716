@@ -1,0 +1,23 @@
+.github/workflows/update-formula.yml
+  s_2cd5c103a472fe::t_f93bed96356f34 1-30
+README.md
+  s_2cd5c103a472fe::t_5bbea4949bd6e7 8
+scripts/update-formula.sh
+  s_2cd5c103a472fe::t_637154d07ba3d8 1-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f86c430ec2c8f0e729e6eed95a200526b86e716",
+  "prompts": {},
+  "sessions": {
+    "s_2cd5c103a472fe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e19a693d-db74-4bef-b0b7-2ee4589a5f5b",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "arjun-endeavorai <arjun@endeavorai.com>"
+    }
+  }
+}
