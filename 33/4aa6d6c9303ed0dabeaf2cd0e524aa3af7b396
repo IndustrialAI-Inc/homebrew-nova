@@ -1,0 +1,14 @@
+README.md
+  h_9c0f7a726ec7fe 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "334aa6d6c9303ed0dabeaf2cd0e524aa3af7b396",
+  "prompts": {},
+  "humans": {
+    "h_9c0f7a726ec7fe": {
+      "author": "arjun-endeavorai <arjun@endeavorai.com>"
+    }
+  }
+}
