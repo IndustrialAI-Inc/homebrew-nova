@@ -1,27 +1,27 @@
 class Nova < Formula
   desc "Turn a warehouse into an ontology and put apps on top of it"
   homepage "https://nova.endeavorai.com"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      url "https://nova.endeavorai.com/dl/0.2.0/nova-aarch64-apple-darwin.tar.gz"
-      sha256 "29838e6d24ee05d16cda531235a14f0b832082dc1abccae061a3709d49651d5c"
+      url "https://nova.endeavorai.com/dl/0.3.0/nova-aarch64-apple-darwin.tar.gz"
+      sha256 "2ac33a770dc9ed8ab39d29c5bffed655e224f8262a09dfa575e0f166f30379f9"
     end
     on_intel do
-      url "https://nova.endeavorai.com/dl/0.2.0/nova-x86_64-apple-darwin.tar.gz"
-      sha256 "536deb50811b2556d389f71528465b1f4e70e159ce532877eb35c0b9cee1ceca"
+      url "https://nova.endeavorai.com/dl/0.3.0/nova-x86_64-apple-darwin.tar.gz"
+      sha256 "7ad54415cfc4e3b4cc40d2d95f16ded3ad3126dd9103d53d3537c36d3ce3ab43"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://nova.endeavorai.com/dl/0.2.0/nova-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1f87ddafb213eebcb919d0a314d28756ede0fd48aaf6937e2ab1e98938b2e733"
+      url "https://nova.endeavorai.com/dl/0.3.0/nova-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "119e790dc1b608f6234676619f1efd8c876126f0c18e188a08408ab8f875933a"
     end
     on_intel do
-      url "https://nova.endeavorai.com/dl/0.2.0/nova-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "75137d91cf8b935e4c6efe7b9104ef2f6501823c5e06b55e6e7dc8439d0cd1a0"
+      url "https://nova.endeavorai.com/dl/0.3.0/nova-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "a284041deb9fb8e8055e8dd1bd344cf74b4f8b55d20ef7a31f5fb2627e1005bf"
     end
   end
 
